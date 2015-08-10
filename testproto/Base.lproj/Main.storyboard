@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
+                <viewController id="vXZ-lx-hvc" customClass="home" customModule="testproto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="cell" id="qaV-yX-bY4">
+                                <rect key="frame" x="0.0" y="40" width="320" height="375"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="cellbot" id="fcW-cD-ZU1">
+                                <rect key="frame" x="0.0" y="440" width="320" height="395"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZKt-BV-YgS">
+                                <rect key="frame" x="231" y="462" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="fab">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fabtapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VO5-jV-WUO"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="vym-HV-ozC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.25882352939999997" blue="0.37647058820000001" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jMR-Ax-Xd1">
+                                <rect key="frame" x="110" y="500" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Nevermind">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nevermindpressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="orv-H3-KvT"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="btn6" id="KuI-gW-3Uk">
+                                <rect key="frame" x="46" y="215" width="58" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="btn5" id="LYg-dm-lnw">
+                                <rect key="frame" x="131" y="215" width="58" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="btn4" id="aa2-DS-WGc">
+                                <rect key="frame" x="216" y="215" width="58" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="btn2" id="xID-se-pRD">
+                                <rect key="frame" x="131" y="295" width="58" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="btn1" id="VNv-Uv-HnB">
+                                <rect key="frame" x="216" y="295" width="58" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="btn3" id="p0S-N0-fNX">
+                                <rect key="frame" x="46" y="295" width="58" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19607843137254902" green="0.25882352941176467" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="actionview" destination="vym-HV-ozC" id="9XQ-X5-Ofo"/>
+                        <outlet property="fab" destination="ZKt-BV-YgS" id="ljJ-80-gC7"/>
+                        <outlet property="gifbtn" destination="VNv-Uv-HnB" id="fji-ye-Dgd"/>
+                        <outlet property="helpbtn" destination="xID-se-pRD" id="0Ej-YX-7Sc"/>
+                        <outlet property="linkbtn" destination="LYg-dm-lnw" id="dea-QQ-6Pl"/>
+                        <outlet property="nevermindbtn" destination="jMR-Ax-Xd1" id="x93-HP-uvT"/>
+                        <outlet property="photobtn" destination="aa2-DS-WGc" id="MKV-yD-D3i"/>
+                        <outlet property="quotebtn" destination="p0S-N0-fNX" id="3LK-oj-d4F"/>
+                        <outlet property="writebtn" destination="KuI-gW-3Uk" id="SAR-F2-stU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-614" y="465"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn1" width="58" height="58"/>
+        <image name="btn2" width="58" height="58"/>
+        <image name="btn3" width="58" height="58"/>
+        <image name="btn4" width="58" height="58"/>
+        <image name="btn5" width="58" height="58"/>
+        <image name="btn6" width="58" height="58"/>
+        <image name="cell" width="320" height="375"/>
+        <image name="cellbot" width="320" height="395"/>
+        <image name="fab" width="80" height="80"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
